@@ -64,3 +64,6 @@ PS C:\Users\mathi\Documents\HIBP> sls 5baa61e4c9b93f3f0682250b6cf8331b7ee68fd8 .
 pwned-passwords-1.0.txt:109236128:5BAA61E4C9B93F3F0682250B6CF8331B7EE68FD8
 ```
 if PS finds it, then your password has been pwned.
+
+# OneLineCommand
+```. .\HashString.ps1; sls -Pattern (Get-StringHash "password" "SHA1") .\pwned-passwords-1.0.txt```
